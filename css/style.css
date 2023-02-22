@@ -1,9 +1,53 @@
+/* RESET */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* COMMON */
 body{
   font-family: 'Montserrat', sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+/* LAYOUT */
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.upper-section{
+  height: calc(100% - 50px);
+  width: 100%;
+  border: 1px solid blue;
+}
+
+.sidebar{
+  height: 100%;
+  width: 200px;
+  border: 1px solid blue;
+}
+
+.content{
+  height: 100%;
+  width: calc(100% - 200px);
+  border: 1px solid blue;
+}
+
+.header{
+  height: 50px;
+  width: 100%;
+  border: 1px solid blue;
+  display: inline-block;
+}
+
+.lower-section{
+  height: 50px;
+  width: 100%;
+  border: 1px solid orange;
 }
