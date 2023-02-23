@@ -38,6 +38,7 @@ a{
   height: calc(100% - 50px);
   width: 100%;
   border: 1px solid blue;
+  /* background-color: blue; */
 }
 
 /* sidebar */
@@ -46,7 +47,7 @@ a{
   width: 200px;
   /* border: 1px solid blue; */
   background-color: black;
-  color: lightgrey;
+  color: grey;
   padding: 1rem 1rem 1rem 1rem;
   position: relative;
 }
@@ -76,6 +77,7 @@ a{
 .icons{
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .playlist{
@@ -135,34 +137,145 @@ a{
   color: lightgray;
 }
 
-/* main content */
-.content{
-  height: 100%;
-  width: calc(100% - 200px);
-  border: 1px solid blue;
-}
-
+/* header */
 .header{
   height: 50px;
   width: 100%;
   border: 1px solid blue;
   display: inline-block;
+  /* background-color: orange; */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 100;
 }
 
-.lower-section{
+
+/* main content */
+.content{
+  height: 100%;
+  width: calc(100% - 200px);
+  border: 1px solid blue;
+  /* background-color: red; */
+  overflow-y: auto;
+  background-color: #141922;
+  color: white;
+}
+
+.content-container{
+  padding: 4rem 1rem 1rem 1rem;
+
+}
+
+.nav-list{
+  font-size: 0.7rem;
+  gap: 20px;
+  color: grey;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list li{
+  display: inline-block;
+}
+
+.played{
+  padding-bottom: 1rem;
+}
+
+.album{
+  width: calc(100% / 6 - 50px / 6);
+}
+
+.albums-list{
+  gap: 10px;
+  display: flex;
+}
+
+.album h6{
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.album p{
+  text-align: center;
+  font-size: 0.6rem;
+  color: grey;
+  padding-top: 0.3rem;
+}
+
+.played{
+  padding: 1rem 0;
+}
+
+.created-for{
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.subtitle{
+  color: grey;
+  font-size: 0.6rem;
+  padding-bottom: 1rem
+}
+
+.rounded{
+  border-radius: 50%;
+}
+
+/* player */
+.player{
   height: 50px;
   width: 100%;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
+  background-color: #282828;
 }
 
 
+/* md size */
+@media screen and (max-width:1100px) {
+  .albums-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .album{
+    width: calc(100% / 4 - 50px / 4);
+  }
+  
+  .albums-list{
+    gap: 10px;
+  }
+}
+
+/* s size */
+@media screen and (max-width:700px) {
+  .albums-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .album{
+    width: calc(100% / 2 - 50px / 2);
+  }
+  
+  .albums-list{
+    gap: 10px;
+  }
+}
+
+/* xs size */
 @media screen and (max-width:600px) {
 
+  /* sidebar */
   .sidebar{
     width: 50px;
     padding: 0.5rem;
     position: relative;
+  }
+
+  .content{
+    width: calc(100% - 50px);
   }
 
   .logo-small{
