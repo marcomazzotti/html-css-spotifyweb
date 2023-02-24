@@ -24,7 +24,7 @@
           <li><a href=""><i class="fa-solid fa-lines-leaning icons"></i><span>La tua libreria</span> </a></li>
         </ul>
         <div class="xs-icons">
-          <i class="fa-solid fa-house block"></i>
+          <i class="fa-solid fa-house"></i>
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-lines-leaning"></i>
         </div>
@@ -40,13 +40,13 @@
           <li><a href="">Nome Playlist</a></li>
         </ul>
         <div class="profile">
-          <i class="fa-solid fa-circle-info info"></i>Installa App
+           <a href=""><i class="fa-solid fa-arrow-down download"></i></i>Installa App</a>
           <hr>
-          <p><i class="fa-regular fa-circle-user user"></i>John Doe</p>
+           <a href=""><p><i class="fa-regular fa-circle-user user"></i>John Doe</p></a>
         </div>
         <div class="xs-icons-bottom">
-          <i class="fa-solid fa-circle-info info"></i>
-          <i class="fa-regular fa-circle-user user user-big"></i>
+          <a href=""><i class="fa-solid fa-arrow-down download"></i></i></a>
+           <a href=""> <i class="fa-regular fa-circle-user user user-big"></i></a>
         </div>
       </div>
       <div class="content">
@@ -74,32 +74,50 @@
               <h3 class="played">Recently played</h3>
               <div class="albums-list">
                 <div class="album">
-                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="album-img">
+                    <img src="img/metal_lifting.jpg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Heavy Metal</h6>
                   <p>Subtitle</p>
                 </div>
                 <div class="album">
-                  <img src="img/stranger.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/stranger.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Stranger Thing, Vol 1 (a Netflix Original Series Soundtrack)</h6>
                   <p>Subtitle</p>
                 </div>
                 <div class="album">
-                  <img src="img/aquietplace.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/aquietplace.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>A quiet place</h6>
                   <p>Subtitle</p>
                 </div>
                 <div class="album">
-                  <img src="img/split.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/split.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Split</h6>
                   <p>Subtitle</p>
                 </div>
                 <div class="album">
-                  <img src="img/cure.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/cure.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>A cure for wellness</h6>
                   <p>Subtitle</p>
                 </div>
                 <div class="album">
-                  <img src="img/sinister.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/sinister.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Sinister</h6>
                   <p>Subtitle</p>
                 </div>
@@ -112,11 +130,17 @@
             <p class="subtitle">Più ascolti, pù accurati saranno i suggerimenti</p>
               <div class="albums-list flex">
                 <div class="album">
-                  <img src="img/radar.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/radar.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Release Radar</h6>
                 </div>
                 <div class="album">
-                  <img src="img/mixdaily.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/mixdaily.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Daily Mix 1</h6>
                 </div>
               </div>
@@ -128,11 +152,17 @@
             <p class="subtitle">Più ascolti, pù accurati saranno i suggerimenti</p>
               <div class="albums-list flex">
                 <div class="album">
-                  <img class="rounded" src="img/youg.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/youg.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Lana Del Rey</h6>
                 </div>
                 <div class="album">
-                  <img class="rounded" src="img/einaudi.jpeg" alt="">
+                  <div class="album-img">
+                    <img src="img/einaudi.jpeg" alt="">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
                   <h6>Ludovico Einaudi</h6>
                 </div>
               </div>
@@ -142,7 +172,54 @@
       </div>
     </div>
 
-    <div class="player"></div>
+    <!-- footer -->
+    <div class="player">
+      <div class="left">
+        <div class="left-img">
+          <img src="img/sinister.jpeg" alt="">
+        </div>
+        <div class="left-title">
+          <h5>Sinister</h5>
+          <p>nome brano</p>
+        </div>
+        <div class="left-icons">
+          <a href=""><i class="fa-regular fa-heart"></i></a>
+          <a href=""><i class="fa-regular fa-folder"></i></a>
+        </div>
+      </div>
+      <div class="center">
+        <div class="center-actions">
+          <ul class="player-list">
+            <li><a href=""><i class="fa-solid fa-shuffle"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-backward-step"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-circle-play play"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-forward-step"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-rotate-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="center-time">
+          <div class="min">0:25</div>
+          <div class="player-bar-active"></div>
+          <div class="round-hover"></div>
+          <div class="player-bar"></div>
+          <div class="max">4:35</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-icons">
+          <a href=""><i class="fa-solid fa-list"></i></a>
+          <a href=""><i class="fa-solid fa-desktop"></i></a>
+          <a href=""><i class="fa-solid fa-volume-high"></i></a>
+        </div>
+        <div class="volume">
+          <div class="center-time">
+          <div class="player-bar-active"></div>
+          <div class="circle-volume"></div>
+          <div class="player-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
